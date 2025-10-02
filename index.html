@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3ECart - Practice Shopping</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>🛍️ 3ECart</h1>
+    <p>Practice smart shopping with 3ECart!</p>
+    <div class="balance">
+      Wallet Balance:AED <span id="balance">3000</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="products">
+      <h2>🧸 Products</h2>
+      <div class="product">
+        <h3>Tablet</h3>
+        <p>Price: <span class="price">AED 1300</span></p>
+        <button onclick="addToCart('Tablet', 1300)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <h3>Smart Watch</h3>
+        <p>Price: <span class="price">AED 500</span></p>
+        <button onclick="addToCart('Smart Watch', 500)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <h3>Laptop</h3>
+        <p>Price: <span class="price">AED 2000</span></p>
+        <button onclick="addToCart('Laptop', 2000)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <h3>Lenovo TV</h3>
+        <p>Price: <span class="price">AED 1500</span></p>
+        <button onclick="addToCart('Lenovo TV', 1500)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <h3>Headphone</h3>
+        <p>Price: <span class="price">AED 500</span></p>
+        <button onclick="addToCart('Headphone', 500)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <h3>PS 5</h3>
+        <p>Price: <span class="price">AED 1800</span></p>
+        <button onclick="addToCart('PS 5', 1800)">Add to Cart</button>
+      </div>
+
+
+    </section>
+
+    <section class="cart">
+      <h2>🛒 My Cart</h2>
+      <ul id="cart-items"></ul>
+      <p><strong>Total AED:</strong> <span id="total">0</span></p>
+
+      <div class="cart-actions">
+        <button class="secondary" onclick="clearCart()">Clear Cart</button>
+        <button onclick="checkout()">Checkout</button>
+      </div>
+    </section>
+
+    <section class="tips">
+      <h2>💡 Shopping Tips</h2>
+      <ul>
+        <li>Compare prices before adding to cart.</li>
+        <li>Stay within your AED balance.</li>
+        <li>Need help? Ask the teacher!</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 3ECart • Learning is fun!</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
