@@ -1,4 +1,4 @@
-let balance = 3000;
+let balance = 4000;
 let total = 0;
 let cart = [];
 
@@ -68,3 +68,4 @@ function checkout() {
 
 // Initial render
 renderCart();
+
